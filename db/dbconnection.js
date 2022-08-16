@@ -1,4 +1,5 @@
 const {Client}= require('pg');
+const dotenv = require('dotenv');
 
 // const sql_db = mysql.createPool({
 //     host:'localhost',
@@ -7,11 +8,11 @@ const {Client}= require('pg');
 //     database:'taskdb'
 // });
 
-const DB_HOST="35.202.49.159"
-const DB_PORT=5432
-const DB_USER="cb-user"
-const DB_PASSWORD="h4zkMw7jupHxN3wm"
-const DB_DATABASE="postgres"
+const DB_HOST= process.env.DB_HOST
+const DB_PORT= process.env.DB_PORT
+const DB_USER= process.env.DB_USER
+const DB_PASSWORD= process.env.DB_PASSWORD
+const DB_DATABASE= process.env.DB_DATABASE
 
 const client = new Client ({
     host : DB_HOST,

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyparser = require('body-parser');
+const dotenv = require('dotenv')
 const session = require('express-session');
 const cookieparser =require('cookie-parser');
 const prot =3000;
