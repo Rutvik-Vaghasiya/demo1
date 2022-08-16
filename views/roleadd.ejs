@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role ADD</title>
+</head>
+<body>
+    <h1>ADD New ROLE </h1>
+    <br>
+    <div id="color" style="color: red"><%- msg %></div>
+    <br>
+    <div>
+        <form  action="/newroleadd" method="post">
+            <div class="userlist">
+                <label for="rolename">Role Name :</label>
+                <input type="text" class="rolename" name='rolename' required/>
+            </div>
+            <div class="userlist">
+                <label for="access">Access :</label>
+                <input type="text" class="access" name='access' required/>
+            </div>
+            <br><br>
+            <button  onclick=test() class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    
+        
+    </div>
+   <script> 
+   function test(){ console.log("hellllll")}
+</script>
+</body>
+</html>
